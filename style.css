@@ -1,0 +1,103 @@
+ *{
+     margin: 0;
+     padding: 0;
+ }
+
+ body{
+    font-family: sans-serif;
+    background: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1em;
+ }
+
+ h2{
+    color: white;
+    margin: 25px auto;
+    margin-top: 35px;
+    text-shadow:3px 3px 0 rgba(0,0,0,0.1);
+    line-height: 50px;
+}
+
+ .flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.flexbox div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 190px;
+    align-self: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.cat{
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    margin: 20px 20px;
+    list-style: none;
+}
+
+.dog{
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    margin: 20px 20px;
+    list-style: none;
+}
+
+.fish{
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    margin: 20px 20px;
+    list-style: none;
+}
+
+.cat li, .dog li, .fish li{
+    line-height: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 190px;
+}
+
+.cat li:last-of-type, .dog li:last-of-type, .fish li:last-of-type{
+    border-bottom: none;
+}
+
+.cost{
+    font-size: 3em;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100; 
+}
+
+button{
+    background: yellow;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 4px;
+    border: yellow;
+    width: 95%;
+}
+
+.dog button::before {
+  content: "🐶 ";
+}
+
+.cat button::before {
+  content: "🐱 ";
+}
+
+.fish button::before {
+  content: "🐟";
+}
+
+button:hover{
+    cursor: pointer;
+}
